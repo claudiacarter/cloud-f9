@@ -8,8 +8,8 @@ import IconSunHigh from "@/assets/icons/IconSunHigh.svg";
 import IconMenuDeep from "@/assets/icons/IconMenuDeep.svg";
 import LinkButton from "./LinkButton.astro";
 import { SITE } from "@/config";
-import { Image } from "astro:assets";
-import F9SiteLogo from "@/assets/F9.png";
+// import { Image } from "astro:assets";
+import F9SiteLogo from "../assets/F9.png";
 
 const { pathname } = Astro.url;
 
@@ -45,7 +45,7 @@ const isActive = (path: string) => {
         href="/"
         class="absolute py-1 text-xl leading-8 font-semibold whitespace-nowrap sm:static sm:my-auto sm:text-2xl sm:leading-none"
       >
-        <img src={F9SiteLogo} alt="cloud F9" class="dark:invert" />
+        {SITE.title}
 
       </a>
       <nav
