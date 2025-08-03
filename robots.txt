@@ -1,0 +1,5 @@
+
+User-agent: *
+Allow: /
+
+Sitemap: https://claudiacarter.github.io/cloud-f9/sitemap-index.xml
